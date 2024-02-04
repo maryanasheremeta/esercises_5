@@ -1,5 +1,5 @@
 the_text= input("Enter String:")
-kw_list = {*'''!"#$%&'()*+,-./:;<=>?@[\]^`{|}~'''}
+kw_list = {'''!"#$%&'()*+,-./:;<=>?@[]^`{}~'''}
 kw_list_1 = __import__('keyword').iskeyword
 is_valid = True
 if not the_text[0].isnumeric() and not kw_list_1(the_text):
@@ -9,6 +9,7 @@ if not the_text[0].isnumeric() and not kw_list_1(the_text):
             break
 else:
     is_valid = False
+
 print(is_valid)
 
 
