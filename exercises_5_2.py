@@ -14,7 +14,7 @@ elif operator=="/":
 while True:
     word = input("Enter do you want continue?:")
     if word == "yes":
-      print(result)
+      print(input("Enter(+,-,*,/):"))
     if word != "yes":
         break
         print("end")
